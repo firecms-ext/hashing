@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * This file is part of FirecmsExt Hashing.
  *
@@ -10,13 +9,12 @@ declare(strict_types=1);
  * @contact  zhimengxingyun@klmis.cn
  * @license  https://gitee.com/firecms-ext/hashing/blob/master/LICENSE
  */
-
 use FirecmsExt\Hashing\Contract\HashInterface;
 use Hyperf\Utils\ApplicationContext;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
-if (!function_exists('bcrypt')) {
+if (! function_exists('bcrypt')) {
     /**
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
@@ -29,8 +27,7 @@ if (!function_exists('bcrypt')) {
     }
 }
 
-
-if (!function_exists('argon2i')) {
+if (! function_exists('argon2i')) {
     /**
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
@@ -44,7 +41,7 @@ if (!function_exists('argon2i')) {
     }
 }
 
-if (!function_exists('argon2id')) {
+if (! function_exists('argon2id')) {
     /**
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface

@@ -6,7 +6,7 @@ This file is part of FirecmsExt Hashing.
 @link     https://www.klmis.cn
 @document https://www.klmis.cn
 @contact  zhimengxingyun@klmis.cn
-@license  https://gitee.com/firecms-ext/hashing/blob/master/LICENSE
+@license  https://github.com/firecms-ext/hashing/blob/master/LICENSE
 EOF;
 
 return (new PhpCsFixer\Config())
